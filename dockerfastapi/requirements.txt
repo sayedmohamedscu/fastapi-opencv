@@ -1,7 +1,7 @@
 numpy
 matplotlib
-#torchvision
-#torch
+torchvision
+torch
 fastapi
 pydantic
 opencv-python
