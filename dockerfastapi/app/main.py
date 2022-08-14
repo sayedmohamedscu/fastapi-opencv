@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-# from pydantic import BaseModel
+from pydantic import BaseModel
 # import torchvision
 # from torchvision import transforms
 # import torch
