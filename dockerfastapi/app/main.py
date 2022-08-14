@@ -50,6 +50,7 @@ def get_predictionbase64(d:Input):
 	'''
 	# Load the image
 	img = base64str_to_PILImage(d.base64str)
+	q=d.threshold
 	# Convert image to tensor
 # 	transform = transforms.Compose([transforms.ToTensor()])
 # 	img = transform(img)
@@ -63,5 +64,7 @@ def get_predictionbase64(d:Input):
 # 	pred_class = pred_class[:pred_t+1]
 # 	return {'boxes': pred_boxes,
 # 		'classes' : pred_class}
-	return {'boxes': 5,
-		'classes' : 5}
+	x=np.array([5,4])
+	y=np.array([5,7])
+	return {'boxes':x
+		'classes' : y}
