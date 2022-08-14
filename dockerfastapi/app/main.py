@@ -11,7 +11,7 @@ import io, json
 import base64
 
 
-# app = FastAPI()
+app = FastAPI()
 
 # # load a pre-trained Model and convert it to eval mode. 
 # # This model loads just once when we start the API.
