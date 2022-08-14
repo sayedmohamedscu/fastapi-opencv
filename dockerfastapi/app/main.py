@@ -66,5 +66,5 @@ def get_predictionbase64(d:Input):
 # 		'classes' : pred_class}
 	x=np.array([5,4])
 	y=np.array([5,7])
-	return {'boxes':x,
-		'classes' : y}
+	return {'boxes':5,
+		'classes' : 7}
