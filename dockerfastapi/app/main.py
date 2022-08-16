@@ -45,12 +45,10 @@ def base64str_to_PILImage(base64str):
 
 @app.put("/predict")
 def get_predictionbase64(d:Input):
-	'''
-	FastAPI API will take a base 64 image as input and return a json object
-	'''
+	
 	# Load the image
-#	img = base64str_to_PILImage(d.base64str)
-#	q=d.threshold
+	img = base64str_to_PILImage(d["base64str"])
+	q=d["threshold"]
 	# Convert image to tensor
 # 	transform = transforms.Compose([transforms.ToTensor()])
 # 	img = transform(img)
@@ -66,5 +64,5 @@ def get_predictionbase64(d:Input):
 # 		'classes' : pred_class}
 	x=np.array([5,4])
 	y=np.array([5,7])
-	return {'boxes':5,
-		'classes' : 7}
+	return {'boxes':"5",
+		'classes' : "5"}
